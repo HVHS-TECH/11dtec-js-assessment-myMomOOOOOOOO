@@ -1,12 +1,9 @@
 .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px
+    background-color: yellow
+  
 }
 
 .gridItem {
     background-color: crimson;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
 }
