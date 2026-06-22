@@ -1,9 +1,7 @@
-.gridContainer {
-    background-color: yellow
-  
-}
-
-.gridItem {
+.body {
     background-color: crimson;
-
+    
+}
+.Title {
+    color: yellow;
 }
