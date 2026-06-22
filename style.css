@@ -1,3 +1,13 @@
 body {
     margin: 0;
 }
+
+.NavBar {
+    background-color: crimson;
+    padding: 50px;
+}
+
+.NavBar h1 {
+    color: yellow;
+    margin: 0;
+}
