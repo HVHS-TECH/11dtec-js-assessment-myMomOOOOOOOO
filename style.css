@@ -4,17 +4,19 @@ body {
 
 .NavBar {
     background-color: crimson;
-    padding: 50px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
+
+    
 }
 
 .NavBar img {
-    width: 30px;
+    width: 100px;
 }
 
 .NavBar h1 {
     color: yellow;
-    margin-left: 30;
+    margin-left: 20;
 }
