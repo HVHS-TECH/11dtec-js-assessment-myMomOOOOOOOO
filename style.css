@@ -16,5 +16,6 @@ body {
 
 .NavBar h1 {
     color: yellow;
+    font-size: 40px;
     margin-left: 20;
 }
