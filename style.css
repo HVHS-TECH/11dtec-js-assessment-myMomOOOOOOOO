@@ -4,12 +4,10 @@ body {
 
 .NavBar {
     background-color: crimson;
-    padding: 10px;
-
+    border: 1px solid orange;
     display: flex;
     align-items: center;
-
-
+    padding: 10px;
 }
 
 .NavBar img {
