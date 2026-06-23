@@ -30,5 +30,5 @@ button {
 }
 
 button:hover {
-    transform: translate(-2px);
+    transform: scale(1.05);
 }
