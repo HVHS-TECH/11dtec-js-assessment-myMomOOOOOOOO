@@ -4,7 +4,7 @@ body {
 
 .NavBar {
     background-color: crimson;
-    border: 1px solid orange;
+    border: 2px solid orange;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -28,7 +28,9 @@ button {
  border: 1px solid orange;
  transition: 0.2s;
  font-size: 30px;
- 
+ font-style: oblique;
+ border-radius: 10px;
+ border: 2px solid orange;
 }
 
 button:hover {
