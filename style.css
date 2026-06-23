@@ -17,13 +17,13 @@ body {
 .NavBar h1 {
     color: yellow;
     font-size: 40px;
-    margin-left: 20;
+    margin-left: 20px;
 }
 
 button {
  background-color:yellow;
  color: red;
  padding: 10px;
- margin-left: 10;
+ margin-left: 10px;
  border: 1px solid orange;
 }
