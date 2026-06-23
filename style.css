@@ -22,15 +22,16 @@ body {
 
 button {
  background-color:yellow;
- color: black;
+ color:darkred;
  padding: 30px 30px;
  margin-left: 10px;
  border: 1px solid orange;
  transition: 0.2s;
+ font-style: italic;
  font-size: 30px;
- font-style: oblique;
  border-radius: 10px;
  border: 2px solid orange;
+ font-weight: bold;
 }
 
 button:hover {
