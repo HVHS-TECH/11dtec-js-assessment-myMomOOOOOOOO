@@ -20,7 +20,10 @@ body {
     margin-left: 20;
 }
 
-.button {
+button {
  background-color:yellow;
  color: red;
+ padding: 10px;
+ margin-left: 10;
+ border: 1px solid orange;
 }
