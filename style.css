@@ -21,12 +21,14 @@ body {
 }
 
 button {
- background-color:white;
+ background-color:yellow;
  color: black;
- padding: 15px 25px;
+ padding: 30px 30px;
  margin-left: 10px;
  border: 1px solid orange;
  transition: 0.2s;
+ font-size: 30px;
+ 
 }
 
 button:hover {
