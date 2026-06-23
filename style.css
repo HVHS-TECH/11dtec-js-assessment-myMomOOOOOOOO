@@ -21,8 +21,8 @@ body {
 }
 
 button {
- background-color:yellow;
- color: red;
+ background-color:white;
+ color: black;
  padding: 15px 25px;
  margin-left: 10px;
  border: 1px solid orange;
@@ -34,6 +34,6 @@ button:hover {
 }
 
 .buttons {
-    margin-left: auto;
+    margin-left: 100px;
     display: flex;
 }
