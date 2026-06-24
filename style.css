@@ -48,3 +48,8 @@ button:hover {
     padding: 15px;
     font-size: 30px;
 }
+
+.login img {
+
+    width: 30px;
+}
