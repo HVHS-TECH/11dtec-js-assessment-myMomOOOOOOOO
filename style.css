@@ -41,8 +41,10 @@ button:hover {
 .buttons {
     margin-left: 100px;
     display: flex;
+    flex: 1;
 }
 
 .login {
-    margin-left: auto;
+    padding: 15px;
+    font-size: 30px;
 }
