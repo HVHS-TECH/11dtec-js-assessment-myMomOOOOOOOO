@@ -15,14 +15,16 @@ function login() {
         alert("Wrong username or password.");
     }
 
-    function startOrder() {
+
+    
+
+}
+
+ function startOrder() {
 
         if (localStorage.getItem("loggedIn") == "true") {
             location.href = "Menu.html"
         } else {
             location.href = "Login.html";
         }
-    }
-    
-
-}
+ }
