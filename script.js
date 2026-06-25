@@ -8,8 +8,17 @@ function login() {
 
     if (username == "admin" && password == "pizza") {
         alert("Welcome!");
+
+        localStorage.setItem("loggedIn", "true");
+        location.href = "Menu.html"
     } else {
         alert("Wrong username or password.");
     }
+
+    function startOrder() {
+
+        if (localStorage)
+    }
+    
 
 }
