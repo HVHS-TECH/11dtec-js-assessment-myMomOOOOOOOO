@@ -17,7 +17,11 @@ function login() {
 
     function startOrder() {
 
-        if (localStorage)
+        if (localStorage.getItem("loggedIn") == "true") {
+            location.href = "Menu.html"
+        } else {
+            location.href = "Login.html"
+        }
     }
     
 
