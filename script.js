@@ -10,7 +10,7 @@ function login() {
         alert("Welcome!");
 
         localStorage.setItem("loggedIn", "true");
-        location.href = "Menu.html"
+        location.href = "index.html"
     } else {
         alert("Wrong username or password.");
     }
