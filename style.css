@@ -53,3 +53,9 @@ button:hover {
     width: 30px;
 }
 
+.Item {
+    border: 2px solid orange;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}

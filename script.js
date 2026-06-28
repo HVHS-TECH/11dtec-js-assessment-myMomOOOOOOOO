@@ -14,10 +14,11 @@ function login() {
     } else {
         alert("Wrong username or password.");
     }
+}
 
-
-    
-
+function logout() {
+    localStorage.removeItem("loggedIn");
+    location.href = "index.html";
 }
 
  function startOrder() {
@@ -27,4 +28,29 @@ function login() {
         } else {
             location.href = "Login.html";
         }
+ }
+
+
+ function marTotal() {
+
+    let quantity = document.getElementById("marQuantity").value;
+    let total = quantity * 15;
+
+    document.getElementById("marTotal").innerHTML =  "total: $" + total;
+ }
+
+ function pepTotal() {
+
+    let quantity = document.getElementById("pepQuantity").value;
+    let total = quantity * 18;
+
+    document.getElementById("pepTotal").innerHTML =  "total: $" + total;
+ }
+
+ function garTotal() {
+
+    let quantity = document.getElementById("garQuantity").value;
+    let total = quantity * 8;
+
+    document.getElementById("garTotal").innerHTML =  "total: $" + total;
  }

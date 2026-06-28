@@ -10,19 +10,28 @@
     <div class="Item">
         <h2>Margherita Pizza</h2>
         <p>$15.00</p>
-        <button>Add to Order</button>
+
+        <input type="number" id="marQuantity" placeholder="quantity">
+        <button onclick="marTotal()">Calculate Total</button>
+        <p id="marTotal"></p>
     </div>
 
     <div class="Item">
-        <h2>{Pepperoni} Pizza</h2>
+        <h2>Pepperoni Pizza</h2>
         <p>$18.00</p>
-        <button>Add to Order</button>
+
+        <input type="number" id="pepQuantity" placeholder="quantity">
+        <button onclick="pepTotal()">Calculate Total</button>
+        <p id="pepTotal"></p>
     </div>
 
     <div class="Item">
-        <h2>Garlic Bread </h2>
+        <h2>Garlic Bread</h2>
         <p>$8.00</p>
-        <button>Add to Order</button>
+
+        <input type="number" id="garQuantity" placeholder="quantity">
+        <button onclick="garTotal()">Calculate Total</button>
+        <p id="garTotal"></p>
     </div>
 
     <script src="script.js"></script>
