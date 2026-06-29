@@ -54,3 +54,7 @@ function logout() {
 
     document.getElementById("garTotal").innerHTML =  "total: $" + total;
  }
+
+ function showMenu() {
+    
+ }
