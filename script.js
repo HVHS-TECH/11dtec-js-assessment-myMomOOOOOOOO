@@ -56,5 +56,9 @@ function logout() {
  }
 
  function showMenu() {
-    
+    let menu = document.getElementById("menu")
+    if (localStorage.getItem("loggedIn") == "true") {
+        menu.innerHTML =
+        '<button onClick="location.href=\'Login.html\'">Login</button>';
+    }
  }
