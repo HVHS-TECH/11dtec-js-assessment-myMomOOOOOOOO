@@ -45,12 +45,15 @@ button:hover {
 }
 
 .login {
-    padding: 15px;
-    font-size: 30px;
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .login img {
-    width: 30px;
+    width: 40px;
 }
 
 .Item {
@@ -67,4 +70,9 @@ button:hover {
 #menu {
     position: absolute;
     right: 0;
+    top: 50px;
+}
+
+#menu button {
+
 }
