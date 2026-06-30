@@ -74,5 +74,12 @@ button:hover {
 }
 
 #menu button {
-
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
