@@ -59,6 +59,11 @@ function logout() {
     let menu = document.getElementById("menu")
     if (localStorage.getItem("loggedIn") == "true") {
         menu.innerHTML =
-        '<button onClick="location.href=\'Login.html\'">Login</button>';
+        '<button onclick="logout()"</button>';
+
+    } else {
+        menu.innerHTML =
+        '<button onclick="location.href=\'Login.html\'">Login</button>';
+    }
     }
  }
