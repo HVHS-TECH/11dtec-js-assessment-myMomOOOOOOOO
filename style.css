@@ -80,3 +80,9 @@ button:hover {
   border: 1px solid gray;
   border-radius: 5px;
 }
+
+.orderButton {
+    display: block;
+    margin: 0px auto;
+    width: 500px;
+}
