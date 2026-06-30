@@ -45,11 +45,8 @@ button:hover {
 }
 
 .login {
-    background: none;
-    border: none;
     padding: 5px;
     margin-left: 10px;
-    cursor: pointer;
 }
 
 .login img {
