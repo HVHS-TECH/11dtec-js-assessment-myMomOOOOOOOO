@@ -57,6 +57,11 @@ function logout() {
 
  function showMenu() {
     let menu = document.getElementById("menu")
+
+    if (menu.innerHTML != "") {
+        menu.innerHTML = "";
+        return;
+    }
     if (localStorage.getItem("loggedIn") == "true") {
         menu.innerHTML =
         '<button onclick="logout()">logout</button>';
