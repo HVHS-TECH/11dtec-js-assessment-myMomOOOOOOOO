@@ -142,3 +142,9 @@ button:hover {
     color: darkred;
     margin-top: 40px;
 }
+
+.menuRow {
+    display: flex;
+    justify-content: center;
+    
+}
