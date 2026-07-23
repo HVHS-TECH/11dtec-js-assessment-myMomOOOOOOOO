@@ -74,15 +74,15 @@ function logout() {
 
     function finishOrder() {
         let name = document.getElementById("customerName").value;
-        let mar = document.getElementById("marQuantity").value;
-        let pep = document.getElementById("pepQuantity").value;
-        let haw = document.getElementById("hawQuantity").value;
-        let meat = document.getElementById("meatQuantity").value;
-        let veg = document.getElementById("vegQuantity").value;
-        let gar = document.getElementById("garQuantity").value;
-        let fri = document.getElementById("friQuantity").value;
-        let coke = document.getElementById("cokeQuantity").value;
-        let spr = document.getElementById("sprQuantity").value;
+        let mar = number(document.getElementById("marQuantity").value);
+        let pep = number(document.getElementById("pepQuantity").value);
+        let haw = number(document.getElementById("HawQuantity").value);
+        let meat = number(document.getElementById("meatQuantity").value);
+        let veg = number(document.getElementById("vegQuantity").value);
+        let gar = number(document.getElementById("garQuantity").value);
+        let fri = number(document.getElementById("friQuantity").value);
+        let coke = number(document.getElementById("cokeQuantity").value);
+        let spr = number(document.getElementById("sprQuantity").value);
 
         let total =
         mar * 15 +
@@ -96,6 +96,7 @@ function logout() {
         spr * 5;
 
         let receipt = "<h2>Receipt</h2>";
+        receipt += "Customer: " + name + "<br></br>";
 
         if (mar > 0) receipt += "Margherita X" + mar + "<br>";
         if (pep > 0) receipt += "Pepperoni X" + pep + "<br>";
