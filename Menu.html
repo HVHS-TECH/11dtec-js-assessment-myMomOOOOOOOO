@@ -5,14 +5,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Our Menu</h1>
+<div class="NavBar">
+    <img src="logo.png" alt="Logo">
+    <h1>A Slice of Life</h1>
+
+    <div class="buttons">
+      <button onclick="location.href='index.html'" title=>Home</button>
+      <button onclick="location.href='Menu.html'" title=>Menu</button>
+      <button onclick="location.href='Offers.html'" title=>Offers</button>
+    </div>
+
+    <div class="loginMenu">
+        <button class="login" title="Login" onclick="showMenu()">
+            <img src="login.png" alt="login">
+        </button>
+
+        <div id="menu"></div>
+    </div>
+</div>
+    
+<h1 class="menuTitle">Our Menu</h1>
+
+<h2 class="sectionTitle">Pizzas</h2>
 
     <div class="Item">
         <h2>Margherita Pizza</h2>
         <p>$15.00</p>
 
-        <input type="number" id="marQuantity" placeholder="quantity">
         <img src="Margarita.png"  alt="Margarita">
+
+
+        <input type="number" id="marQuantity" placeholder="quantity">
         <button onclick="marTotal()">Calculate Total</button>
         <p id="marTotal"></p>
     </div>
@@ -21,8 +44,10 @@
         <h2>Pepperoni Pizza</h2>
         <p>$18.00</p>
 
-        <input type="number" id="pepQuantity" placeholder="quantity">
         <img src="Pepperoni.png" alt="Pepperoni">
+
+
+        <input type="number" id="pepQuantity" placeholder="quantity">
         <button onclick="pepTotal()">Calculate Total</button>
         <p id="pepTotal"></p>
     </div>
@@ -31,8 +56,10 @@
         <h2>Hawaiian Pizza</h2>
         <p>$18.00</p>
 
-        <input type="number" id="HawQuantity" placeholder="quantity">
         <img src="Hawaiian.png" alt="HawaiianPizza">
+
+
+        <input type="number" id="HawQuantity" placeholder="quantity">
         <button onclick="hawTotal()">Calculate Total</button>
         <p id="hawTotal"></p>
     </div>
@@ -41,18 +68,33 @@
         <h2>Meatlovers Pizza</h2>
         <p>$20.00</p>
 
-        <input type="number" id="meatQuantity" placeholder="quantity">
         <img src="Meatlovers.png" alt="Meatlovers">
+
+        <input type="number" id="meatQuantity" placeholder="quantity">
         <button onclick="meatTotal()">Calculate Total</button>
         <p id="meatTotal"></p>
     </div>
 
     <div class="Item">
+        <h2>Vegetarian Pizza</h2>
+        <p>$16.00</p>
+
+        <img src="Vegetarian.png" alt="Vegetarian">
+
+        <input type="number" id="vegQuantity" placeholder="quantity">
+        <button onclick="vegTotal()">Calculate Total</button>
+        <p id="vegTotal"></p>
+    </div>
+
+<h2 class="sectionTitle">Sides</h2>
+
+    <div class="Item">
         <h2>Garlic Bread</h2>
         <p>$8.00</p>
 
+         <img src="GarlicBread.png" alt="GarlicBread">
+
         <input type="number" id="garQuantity" placeholder="quantity">
-        <img src="GarlicBread.png" alt="GarlicBread">
         <button onclick="garTotal()">Calculate Total</button>
         <p id="garTotal"></p>
     </div>

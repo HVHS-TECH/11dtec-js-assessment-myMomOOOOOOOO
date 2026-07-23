@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: linear-gradient(#fff8e8, #ffe6b3);
 }
 
 .NavBar {
@@ -54,10 +55,20 @@ button:hover {
 }
 
 .Item {
-    border: 2px solid orange;
+    width: 500px;
+    margin: 20px auto;
     padding: 20px;
-    margin: 20px;
+    border: 4px solid rgb(145, 60, 0);
     border-radius: 10px;
+    background: linear-gradient(red, yellow);
+    text-align: center;
+
+}
+
+.Item input {
+    width: 80px;
+    padding: 8px;
+    text-align: center;
 }
 
 .loginMenu {
@@ -97,4 +108,37 @@ button:hover {
     background-color: white;
 }
 
+.Item img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px auto;
+    display: block;
+}
 
+.h1 {
+    text-align: center;
+}
+
+.menuTitle {
+    text-align: center;
+    color: darkred;
+    font-size: 55px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.Item button {
+    padding: 10px 20px;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 35px;
+    color: darkred;
+    margin-top: 40px;
+}
