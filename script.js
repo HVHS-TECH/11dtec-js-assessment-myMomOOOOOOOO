@@ -74,15 +74,15 @@ function logout() {
 
     function finishOrder() {
         let name = document.getElementById("customerName").value;
-        let mar = number(document.getElementById("marQuantity").value);
-        let pep = number(document.getElementById("pepQuantity").value);
-        let haw = number(document.getElementById("HawQuantity").value);
-        let meat = number(document.getElementById("meatQuantity").value);
-        let veg = number(document.getElementById("vegQuantity").value);
-        let gar = number(document.getElementById("garQuantity").value);
-        let fri = number(document.getElementById("friQuantity").value);
-        let coke = number(document.getElementById("cokeQuantity").value);
-        let spr = number(document.getElementById("sprQuantity").value);
+        let mar = Number(document.getElementById("marQuantity").value);
+        let pep = Number(document.getElementById("pepQuantity").value);
+        let haw = Number(document.getElementById("HawQuantity").value);
+        let meat = Number(document.getElementById("meatQuantity").value);
+        let veg = Number(document.getElementById("vegQuantity").value);
+        let gar = Number(document.getElementById("garQuantity").value);
+        let fri = Number(document.getElementById("friQuantity").value);
+        let coke = Number(document.getElementById("cokeQuantity").value);
+        let spr = Number(document.getElementById("sprQuantity").value);
 
         let total =
         mar * 15 +
