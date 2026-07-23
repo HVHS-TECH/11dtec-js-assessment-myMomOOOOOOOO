@@ -23,6 +23,17 @@
         <div id="menu"></div>
     </div>
 </div>
+
+<div class="loginBox">
+    <h2>Start Your Order</h2>
+
+    <input type="text" id="customerName" placeholder="Enter Your Name">
+    <br><br>
+
+    <button onclick="finishOrder()">Finish Order</button>
+
+    <h3 id="receipt"></h3>
+</div>
     
 <h1 class="menuTitle">Our Menu</h1>
 
@@ -38,8 +49,6 @@
 
 
         <input type="number" id="marQuantity" placeholder="quantity">
-        <button onclick="marTotal()">Calculate Total</button>
-        <p id="marTotal"></p>
     </div>
 
     <div class="Item">
@@ -50,8 +59,6 @@
 
 
         <input type="number" id="pepQuantity" placeholder="quantity">
-        <button onclick="pepTotal()">Calculate Total</button>
-        <p id="pepTotal"></p>
     </div>
 
     <div class="Item">
@@ -62,8 +69,6 @@
 
 
         <input type="number" id="HawQuantity" placeholder="quantity">
-        <button onclick="hawTotal()">Calculate Total</button>
-        <p id="hawTotal"></p>
     </div>
 
     <div class="Item">
@@ -73,8 +78,6 @@
         <img src="Meatlovers.png" alt="Meatlovers">
 
         <input type="number" id="meatQuantity" placeholder="quantity">
-        <button onclick="meatTotal()">Calculate Total</button>
-        <p id="meatTotal"></p>
     </div>
 
     <div class="Item">
@@ -84,8 +87,6 @@
         <img src="Vegetarian.png" alt="Vegetarian">
 
         <input type="number" id="vegQuantity" placeholder="quantity">
-        <button onclick="vegTotal()">Calculate Total</button>
-        <p id="vegTotal"></p>
     </div>
 </div>
 <h2 class="sectionTitle">Sides</h2>
@@ -99,8 +100,6 @@
          <img src="GarlicBread.png" alt="GarlicBread">
 
         <input type="number" id="garQuantity" placeholder="quantity">
-        <button onclick="garTotal()">Calculate Total</button>
-        <p id="garTotal"></p>
     </div>
 
 
@@ -111,8 +110,6 @@
          <img src="Fries.png" alt="Fries">
 
         <input type="number" id="friQuantity" placeholder="quantity">
-        <button onclick="friTotal()">Calculate Total</button>
-        <p id="friTotal"></p>
     </div>
 </div>
 <h2 class="sectionTitle">Drinks</h2>
@@ -126,8 +123,6 @@
          <img src="Coke.png" alt="Coke">
 
         <input type="number" id="cokeQuantity" placeholder="quantity">
-        <button onclick="cokeTotal()">Calculate Total</button>
-        <p id="cokeTotal"></p>
     </div>
 
     <div class="Item">
@@ -137,8 +132,6 @@
          <img src="Sprite.png" alt="Sprite">
 
         <input type="number" id="sprQuantity" placeholder="quantity">
-        <button onclick="sprTotal()">Calculate Total</button>
-        <p id="sprTotal"></p>
     </div>
 </div>
     <script src="script.js"></script>

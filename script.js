@@ -71,4 +71,33 @@ function logout() {
         '<button onclick="location.href=\'Login.html\'">Login</button>';
     }
     }
+
+    function finishOrder() {
+        let name = document.getElementById("customerName").value;
+        let mar = document.getElementById("marQuantity").value;
+        let pep = document.getElementById("pepQuantity").value;
+        let haw = document.getElementById("hawQuantity").value;
+        let meat = document.getElementById("meatQuantity").value;
+        let veg = document.getElementById("vegQuantity").value;
+        let gar = document.getElementById("garQuantity").value;
+        let fri = document.getElementById("friQuantity").value;
+        let coke = document.getElementById("cokeQuantity").value;
+        let spr = document.getElementById("sprQuantity").value;
+
+        let total =
+        mar * 15 +
+        pep * 18 +
+        haw * 18 +
+        meat * 20 +
+        veg * 16 +
+        gar * 8 +
+        fri * 8.5 +
+        coke * 5 +
+        spr * 5 +
+
+        document.getElementById("receipt").innerHTML = 
+        "Thank you " + name +
+        "<br>Your total is $" + total.toFixed(2);
+        
+    }
  
