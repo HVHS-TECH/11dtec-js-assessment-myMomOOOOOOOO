@@ -93,11 +93,23 @@ function logout() {
         gar * 8 +
         fri * 8.5 +
         coke * 5 +
-        spr * 5 +
+        spr * 5;
 
-        document.getElementById("receipt").innerHTML = 
-        "Thank you " + name +
-        "<br>Your total is $" + total.toFixed(2);
-        
+        let receipt = "<h2>Receipt</h2>";
+
+        if (mar > 0) receipt += "Margherita X" + mar + "<br>";
+        if (pep > 0) receipt += "Pepperoni X" + pep + "<br>";
+        if (haw > 0) receipt += "Hawaiian X" + haw + "<br>";
+        if (meat > 0) receipt += "Meatlovers X" + meat + "<br>";
+        if (veg > 0) receipt += "Vegetarian X" + veg + "<br>";
+        if (gar > 0) receipt += "Garlic Bread X" + gar + "<br>";
+        if (fri > 0) receipt += "Fries X" + fri + "<br>";
+        if (coke > 0) receipt += "Coke X" + coke + "<br>";
+        if (spr > 0) receipt += "Sprite X" + spr + "<br>";
+
+        receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
+        receipt += "<br><br>Thank you for ordering!";
+
+        document.getElementById("receipt").innerHTML = receipt;     
     }
  

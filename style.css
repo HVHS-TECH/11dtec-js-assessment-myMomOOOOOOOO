@@ -148,3 +148,14 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+#receipt {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid brown;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+}
