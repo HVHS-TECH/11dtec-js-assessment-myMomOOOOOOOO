@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: linear-gradient(#fff8e8, #ffe6b3);
+    background: linear-gradient(#fe0000, #f2ff00);
 }
 
 .NavBar {
@@ -23,7 +23,7 @@ body {
 
 button {
  background-color:yellow;
- color:darkred;
+ color:rgb(66, 0, 0);
  padding: 30px 30px;
  margin-left: 10px;
  border: 1px solid orange;
