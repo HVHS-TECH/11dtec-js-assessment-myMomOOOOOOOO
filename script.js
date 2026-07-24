@@ -126,8 +126,16 @@ function logout() {
         if (spr > 0) receipt += "Sprite X" + spr + "<br>";
 
         receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
-        
         receipt += "<br><br>Thank you for ordering!";
+
+        if (total == 0) {
+            alert("Please choose at least one item.");
+            return;
+        }
+        if (money < total) {
+            alert("You don't have enough money.");
+            return;
+        }
 
         document.getElementById("receipt").innerHTML = receipt;     
     }
