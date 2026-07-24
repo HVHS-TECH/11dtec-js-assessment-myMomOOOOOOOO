@@ -97,11 +97,21 @@ function logout() {
 
         if (total == 0) {
             alert("Please choose at least one item.");
+            return;
         }
+
+        if(money <= 0) {
+            alert("Please enter the amount of money.");
+            return;
+        }
+
+        
         if (money < total) {
             alert("You don't have enough money.");
             return;
         }
+
+        
 
         let change = (money - total).toFixed(2);
         let today = new Date();
@@ -116,10 +126,7 @@ function logout() {
         receipt += "<hr>";
         receipt += "Total Items: " + items + "<br><br>";
 
-        if(money <= 0) {
-            alert("Please enter the amount of money.");
-            return;
-        }
+        
     
         let item = 1;
 
