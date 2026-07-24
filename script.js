@@ -106,7 +106,7 @@ function logout() {
         fri * 8.5 +
         coke * 5 +
         spr * 5;
-        
+
         let change = money - total;
         let today = new Date();
         let orderNumber = Math.floor(Math.random() * 9000) + 1000;
@@ -126,17 +126,47 @@ function logout() {
             return;
         }
 
-        if (mar > 0) receipt += "Margherita X" + mar + "<br>";
-        if (pep > 0) receipt += "Pepperoni X" + pep + "<br>";
-        if (haw > 0) receipt += "Hawaiian X" + haw + "<br>";
-        if (meat > 0) receipt += "Meatlovers X" + meat + "<br>";
-        if (veg > 0) receipt += "Vegetarian X" + veg + "<br>";
-        if (gar > 0) receipt += "Garlic Bread X" + gar + "<br>";
-        if (fri > 0) receipt += "Fries X" + fri + "<br>";
-        if (coke > 0) receipt += "Coke X" + coke + "<br>";
-        if (spr > 0) receipt += "Sprite X" + spr + "<br>";
+        if (mar > 0) {
+           receipe += item + ". Margherita X" + mar + "<br>";
+           item++;
+        }
+        if (pep > 0) {
+            receipt += item + "Pepperoni X" + pep + "<br>";
+            item;
+        }
+        if (haw > 0) {
+            receipt += item + "Hawaiian X" + haw + "<br>";
+            item;
+        }
+        if (meat > 0) {
+            receipt += item + "Meatlovers X" + meat + "<br>";
+            item;
+        }
+        if (veg > 0) {
+            receipt += item + "Vegetarian X" + veg + "<br>";
+            item;
+        }
+        if (gar > 0) {
+            receipt += item + "Garlic Bread X" + gar + "<br>";
+            item;
+        }
+        if (fri > 0) {
+            receipt += item + "Fries X" + fri + "<br>";
+            item;
+        }
+        if (coke > 0) {
+            receipt += item + "Coke X" + coke + "<br>";
+            item;
+        }
+        if (spr > 0) {
+            receipt += item + "Sprite X" + spr + "<br>";
+            item;
+        }
 
         receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
+        receipt += "<br>Money Given: $" + money.toFixed(2);
+        receipt += "<br>Change: $" + change.toFixed(2);
+        receipt += "<br>Estimated wait: " + wait + " minutes";
         receipt += "<br><br>Thank you for ordering!";
 
         if (total == 0) {
