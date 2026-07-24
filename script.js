@@ -126,7 +126,7 @@ function logout() {
            item++;
         }
         if (pep > 0) {
-           receipt += item + ". " + menu[1] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[1] + " x" + pep + "<br>";
 
             item++;
         }
