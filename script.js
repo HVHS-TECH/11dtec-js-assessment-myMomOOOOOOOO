@@ -106,6 +106,11 @@ function logout() {
         fri * 8.5 +
         coke * 5 +
         spr * 5;
+        
+        let change = money - total;
+        let today = new Date();
+        let orderNumber = Math.floor(Math.random() * 9000) + 1000;
+        let wait = Math.floor(Math.random() * 15) + 10;
 
         let receipt = "<h2>Receipt</h2>";
 
@@ -146,9 +151,6 @@ function logout() {
         document.getElementById("receipt").innerHTML = receipt;     
     }
 
-    let change = money - total;
-    let today = new Date();
-    let orderNumber = Math.floor(Math.random() * 9000) + 1000;
-    let wait = Math.floor(Math.random() * 15) + 10;
+  
 
  
