@@ -122,39 +122,40 @@ function logout() {
         
 
         if (mar > 0) {
-           receipt += item + ". Margherita X" + mar + "<br>";
+           receipt += item + ". " + menu[0] + " x" + mar + "<br>";
            item++;
         }
         if (pep > 0) {
-            receipt += item + ". Pepperoni X" + pep + "<br>";
+           receipt += item + ". " + menu[1] + " x" + mar + "<br>";
+
             item++;
         }
         if (haw > 0) {
-            receipt += item + ". Hawaiian X" + haw + "<br>";
+           receipt += item + ". " + menu[2] + " x" + mar + "<br>";
             item++;
         }
         if (meat > 0) {
-            receipt += item + ". Meatlovers X" + meat + "<br>";
+           receipt += item + ". " + menu[3] + " x" + mar + "<br>";
             item++;
         }
         if (veg > 0) {
-            receipt += item + ". Vegetarian X" + veg + "<br>";
+           receipt += item + ". " + menu[4] + " x" + mar + "<br>";
             item++;
         }
         if (gar > 0) {
-            receipt += item + ". Garlic Bread X" + gar + "<br>";
+           receipt += item + ". " + menu[5] + " x" + mar + "<br>";
             item++;
         }
         if (fri > 0) {
-            receipt += item + ". Fries X" + fri + "<br>";
+           receipt += item + ". " + menu[6] + " x" + mar + "<br>";
             item++;
         }
         if (coke > 0) {
-            receipt += item + ". Coke X" + coke + "<br>";
+           receipt += item + ". " + menu[7] + " x" + mar + "<br>";
             item++;
         }
         if (spr > 0) {
-            receipt += item + ". Sprite X" + spr + "<br>";
+           receipt += item + ". " + menu[8] + " x" + mar + "<br>";
             item++;
         }
         receipt += "<hr>";
