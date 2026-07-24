@@ -79,6 +79,11 @@ function logout() {
             return;
         }
 
+        let items =
+        mar + pep + haw + meat + veg + gar + fri + coke + spr;
+
+
+    
         let total =
         mar * 15 +
         pep * 18 +
@@ -110,52 +115,55 @@ function logout() {
         receipt += "Customer: " + name + "<br></br>";
         receipt += "Date: " + today.toLocaleString() + "<br></br>";
         receipt += "<hr>";
+        receipt += "<br>Total Items: " + items;
 
         let item = 1;
 
         
 
         if (mar > 0) {
-           receipe += item + ". Margherita X" + mar + "<br>";
+           receipt += item + ". Margherita X" + mar + "<br>";
            item++;
         }
         if (pep > 0) {
-            receipt += item + "Pepperoni X" + pep + "<br>";
-            item;
+            receipt += item + ". Pepperoni X" + pep + "<br>";
+            item++;
         }
         if (haw > 0) {
-            receipt += item + "Hawaiian X" + haw + "<br>";
-            item;
+            receipt += item + ". Hawaiian X" + haw + "<br>";
+            item++;
         }
         if (meat > 0) {
-            receipt += item + "Meatlovers X" + meat + "<br>";
-            item;
+            receipt += item + ". Meatlovers X" + meat + "<br>";
+            item++;
         }
         if (veg > 0) {
-            receipt += item + "Vegetarian X" + veg + "<br>";
-            item;
+            receipt += item + ". Vegetarian X" + veg + "<br>";
+            item++;
         }
         if (gar > 0) {
-            receipt += item + "Garlic Bread X" + gar + "<br>";
-            item;
+            receipt += item + ". Garlic Bread X" + gar + "<br>";
+            item++;
         }
         if (fri > 0) {
-            receipt += item + "Fries X" + fri + "<br>";
-            item;
+            receipt += item + ". Fries X" + fri + "<br>";
+            item++;
         }
         if (coke > 0) {
-            receipt += item + "Coke X" + coke + "<br>";
-            item;
+            receipt += item + ". Coke X" + coke + "<br>";
+            item++;
         }
         if (spr > 0) {
-            receipt += item + "Sprite X" + spr + "<br>";
-            item;
+            receipt += item + ". Sprite X" + spr + "<br>";
+            item++;
         }
-
+        receipt += "<hr>";
         receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
         receipt += "<br>Money Given: $" + money.toFixed(2);
         receipt += "<br>Change: $" + change.toFixed(2);
         receipt += "<br>Estimated wait: " + wait + " minutes";
+        
+        receipt += "<br>Status: Preparing";
         receipt += "<br><br>Thank you for ordering from A Slice of Life!";
 
         
