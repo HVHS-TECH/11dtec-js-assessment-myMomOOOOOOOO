@@ -97,7 +97,6 @@ function logout() {
 
         if (total == 0) {
             alert("Please choose at least one item.");
-            return;
         }
         if (money < total) {
             alert("You don't have enough money.");
@@ -115,8 +114,13 @@ function logout() {
         receipt += "Customer: " + name + "<br></br>";
         receipt += "Date: " + today.toLocaleString() + "<br></br>";
         receipt += "<hr>";
-        receipt += "<br>Total Items: " + items;
+        receipt += "Total Items: " + items + "<br><br>";
 
+        if(money <= 0) {
+            alert("Please enter the amount of money.");
+            return;
+        }
+    
         let item = 1;
 
         
@@ -160,12 +164,11 @@ function logout() {
         }
         receipt += "<hr>";
         receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
-        alert("Payment accepted!");
         receipt += "<br>Money Given: $" + money.toFixed(2);
         receipt += "<br>Change: $" + change;
-        receipt += "<br>Estimated wait: " + wait + " minutes";
+        receipt += "<br><b>Estimated Wait:</b> " + wait + " minutes";
         receipt += "<br>Pick up at the front counter.";
-        receipt += "<br>Status: Preparing";
+        receipt += "<br><b>Status:</b> Preparing";
         receipt += "<br><br>Thank you for ordering from A Slice of Life!";
         receipt += "<br>We hope to see you again!"
 
