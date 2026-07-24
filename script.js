@@ -1,5 +1,16 @@
 console.log("Hello world!")
 
+let menu = [
+    "Margherita Pizza",
+    "Pepperoni Pizza",
+    "Hawaiian Pizza",
+    "Meatlovers Pizza",
+    "Vegetarian Pizza",
+    "Garlic Bread",
+    "Fries",
+    "Coke",
+    "Sprite"
+];
 
 function login() {
 
