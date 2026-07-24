@@ -167,7 +167,7 @@ function logout() {
         receipt += "<br>Money Given: $" + money.toFixed(2);
         receipt += "<br>Change: $" + change.toFixed(2);
         receipt += "<br>Estimated wait: " + wait + " minutes";
-        receipt += "<br><br>Thank you for ordering!";
+        receipt += "<br><br>Thank you for ordering from A Slice of Life!";
 
         if (total == 0) {
             alert("Please choose at least one item.");
