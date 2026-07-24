@@ -11,7 +11,7 @@
 
     <div class="buttons">
       <button onclick="location.href='index.html'" title=>Home</button>
-      <button onclick="location.href='Menu.html'" title=>Menu</button>
+      <button onclick="startOrder()">Menu</button>
     </div>
 
     <div class="loginMenu">
@@ -186,6 +186,11 @@
 <footer>
     <p>&copy; 2026 A Slice of Life</p>
 </footer>
+<script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        location.href = "Login.html"
+    }
+</script>
     <script src="script.js"></script>
 </body>
 </html>
