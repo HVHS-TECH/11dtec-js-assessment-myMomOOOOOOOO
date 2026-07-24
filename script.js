@@ -96,6 +96,11 @@ function logout() {
         let spr = Number(document.getElementById("sprQuantity").value);
         let money = Number(document.getElementById("money").value);
 
+        if (name== "") {
+            alert("Please enter your name.");
+            return;
+        }
+
         let total =
         mar * 15 +
         pep * 18 +
@@ -107,6 +112,15 @@ function logout() {
         coke * 5 +
         spr * 5;
 
+        if (total == 0) {
+            alert("Please choose at least one item.");
+            return;
+        }
+        if (money < total) {
+            alert("You don't have enough money.");
+            return;
+        }
+
         let change = money - total;
         let today = new Date();
         let orderNumber = Math.floor(Math.random() * 9000) + 1000;
@@ -116,15 +130,12 @@ function logout() {
 
         receipt += "Order #: " + orderNumber + "<br>";
         receipt += "Customer: " + name + "<br></br>";
-        receipt += "date: " + today.toLocaleString() + "<br></br>";
+        receipt += "Date: " + today.toLocaleString() + "<br></br>";
         receipt += "<hr>";
 
         let item = 1;
 
-        if (name== "") {
-            alert("Please enter your name.");
-            return;
-        }
+        
 
         if (mar > 0) {
            receipe += item + ". Margherita X" + mar + "<br>";
@@ -169,14 +180,7 @@ function logout() {
         receipt += "<br>Estimated wait: " + wait + " minutes";
         receipt += "<br><br>Thank you for ordering from A Slice of Life!";
 
-        if (total == 0) {
-            alert("Please choose at least one item.");
-            return;
-        }
-        if (money < total) {
-            alert("You don't have enough money.");
-            return;
-        }
+        
 
         document.getElementById("receipt").innerHTML = receipt;     
     }
