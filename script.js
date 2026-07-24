@@ -94,6 +94,7 @@ function logout() {
         let fri = Number(document.getElementById("friQuantity").value);
         let coke = Number(document.getElementById("cokeQuantity").value);
         let spr = Number(document.getElementById("sprQuantity").value);
+        let money = Number(document.getElementById("money").value);
 
         let total =
         mar * 15 +
