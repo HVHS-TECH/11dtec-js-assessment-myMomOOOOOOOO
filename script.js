@@ -110,6 +110,11 @@ function logout() {
         let receipt = "<h2>Receipt</h2>";
         receipt += "Customer: " + name + "<br></br>";
 
+        if (name== "") {
+            alert("Please enter your name.");
+            return;
+        }
+
         if (mar > 0) receipt += "Margherita X" + mar + "<br>";
         if (pep > 0) receipt += "Pepperoni X" + pep + "<br>";
         if (haw > 0) receipt += "Hawaiian X" + haw + "<br>";
@@ -121,6 +126,7 @@ function logout() {
         if (spr > 0) receipt += "Sprite X" + spr + "<br>";
 
         receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
+        
         receipt += "<br><br>Thank you for ordering!";
 
         document.getElementById("receipt").innerHTML = receipt;     
