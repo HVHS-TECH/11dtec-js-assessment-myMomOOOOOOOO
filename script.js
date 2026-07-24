@@ -104,7 +104,7 @@ function logout() {
             return;
         }
 
-        let change = money - total;
+        let change = (money - total).toFixed(2);
         let today = new Date();
         let orderNumber = Math.floor(Math.random() * 9000) + 1000;
         let wait = Math.floor(Math.random() * 15) + 10;
@@ -159,17 +159,35 @@ function logout() {
         }
         receipt += "<hr>";
         receipt += "<br><b>Total: $" + total.toFixed(2) + "</b>";
+        alert("Payment accepted!");
         receipt += "<br>Money Given: $" + money.toFixed(2);
-        receipt += "<br>Change: $" + change.toFixed(2);
+        receipt += "<br>Change: $" + change;
         receipt += "<br>Estimated wait: " + wait + " minutes";
-        
+        receipt += "<br>Pick up at the front counter.";
         receipt += "<br>Status: Preparing";
         receipt += "<br><br>Thank you for ordering from A Slice of Life!";
+        receipt += "<br>We hope to see you again!"
 
         
 
         document.getElementById("receipt").innerHTML = receipt;     
     }
+
+function resetOrder() {
+    document.getElementById("customerName").value = "";
+
+    document.getElementById("marQuantity").value = "";
+    document.getElementById("pepQuantity").value = "";
+    document.getElementById("HawQuantity").value = "";
+    document.getElementById("meatQuantity").value = "";
+    document.getElementById("vegQuantity").value = "";
+    document.getElementById("garQuantity").value = "";
+    document.getElementById("friQuantity").value = "";
+    document.getElementById("cokeQuantity").value = "";
+    document.getElementById("sprQuantity").value = "";
+    document.getElementById("money").value = "";
+    document.getElementById("receipt").innerHTML = "";
+}
 
   
 
