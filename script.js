@@ -114,6 +114,8 @@ function logout() {
         receipt += "date: " + today.toLocaleString() + "<br></br>";
         receipt += "<hr>";
 
+        let item = 1;
+
         if (name== "") {
             alert("Please enter your name.");
             return;
