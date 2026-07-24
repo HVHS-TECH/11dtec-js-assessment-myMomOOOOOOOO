@@ -131,31 +131,31 @@ function logout() {
             item++;
         }
         if (haw > 0) {
-           receipt += item + ". " + menu[2] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[2] + " x" + haw + "<br>";
             item++;
         }
         if (meat > 0) {
-           receipt += item + ". " + menu[3] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[3] + " x" + meat + "<br>";
             item++;
         }
         if (veg > 0) {
-           receipt += item + ". " + menu[4] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[4] + " x" + veg + "<br>";
             item++;
         }
         if (gar > 0) {
-           receipt += item + ". " + menu[5] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[5] + " x" + gar + "<br>";
             item++;
         }
         if (fri > 0) {
-           receipt += item + ". " + menu[6] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[6] + " x" + fri + "<br>";
             item++;
         }
         if (coke > 0) {
-           receipt += item + ". " + menu[7] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[7] + " x" + coke + "<br>";
             item++;
         }
         if (spr > 0) {
-           receipt += item + ". " + menu[8] + " x" + mar + "<br>";
+           receipt += item + ". " + menu[8] + " x" + spr + "<br>";
             item++;
         }
         receipt += "<hr>";
